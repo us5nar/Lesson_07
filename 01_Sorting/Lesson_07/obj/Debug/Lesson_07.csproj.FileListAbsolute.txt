@@ -1,0 +1,10 @@
+D:\Documents\Cources\Lesson_07\Lesson_07\bin\Debug\Lesson_07.exe
+D:\Documents\Cources\Lesson_07\Lesson_07\bin\Debug\Lesson_07.pdb
+D:\Documents\Cources\Lesson_07\Lesson_07\obj\Debug\Lesson_07.csprojResolveAssemblyReference.cache
+D:\Documents\Cources\Lesson_07\Lesson_07\obj\Debug\Lesson_07.exe
+D:\Documents\Cources\Lesson_07\Lesson_07\obj\Debug\Lesson_07.pdb
+D:\Documents\Cources\Lesson_07\01_Sorting\Lesson_07\obj\Debug\Lesson_07.exe
+D:\Documents\Cources\Lesson_07\01_Sorting\Lesson_07\obj\Debug\Lesson_07.pdb
+D:\Documents\Cources\Lesson_07\01_Sorting\Lesson_07\bin\Debug\Lesson_07.exe
+D:\Documents\Cources\Lesson_07\01_Sorting\Lesson_07\bin\Debug\Lesson_07.pdb
+D:\Documents\Cources\Lesson_07\01_Sorting\Lesson_07\obj\Debug\Lesson_07.csprojResolveAssemblyReference.cache
