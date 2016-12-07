@@ -1,39 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Lesson_07
 {
     class insSorter<T>:Sorter<T>
- 
-        {
-            public override T[] Sort(T[] InputArray)
+         {
+            public override T[] Sort()
             {
                 int j;
-
-                if (!(InputArray[0] is IComparable))
+                if (!(inputArray[0] is IComparable))
                 {
-                    return InputArray;
+                    return inputArray;
                 }
                 else
                 {
-                    for (int i = 1; i < InputArray.Length; i++)
+                    for (int i = 1; i < inputArray.Length; i++)
                     //from 2nd to max element
                     {
-                        IComparable KeyElement = (IComparable)InputArray[i];
+                        IComparable KeyElement = (IComparable)inputArray[i];
                         j = i - 1;
-                        IComparable crrentElement = (IComparable)InputArray[j];
+                        IComparable crrentElement = (IComparable)inputArray[j];
                         while (j > 0 && crrentElement.CompareTo(KeyElement) < 0) //it shouldn't work there it should be > 0 !!!!!
                         {
-                            InputArray[j + 1] = InputArray[j];
+                            inputArray[j + 1] = inputArray[j];
                             j--;
                         }
-                        InputArray[j + 1] = (T)KeyElement;
+                        inputArray[j + 1] = (T)KeyElement;
                         //Swap(InputArray, j + 1, i); // unfortunetly it doesn't correct to swap the elements in this realization
                     }
-                    return InputArray;
+                    return inputArray;
                 }
             }
         }
-    
 }

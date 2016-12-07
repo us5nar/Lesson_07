@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lesson_07
 {
@@ -30,14 +28,14 @@ namespace Lesson_07
                 car[4] = Zapor;
 
                 BubSorter<Wehicle> CarSorter = new BubSorter<Wehicle>();
-                Wehicle[] sortedCars = CarSorter.Sort(car);
-                CarSorter.Print(sortedCars);
+                CarSorter.inputArray = car;
+                Wehicle[] sortedCars = CarSorter.Sort();
+                CarSorter.Print();// sortedCars);
                 Console.WriteLine("Sorted by bubble, press any  key to continue");
-                Console.ReadKey();
+                Console.ReadKey(false);
                 Console.WriteLine("Now sorting by insertion");
 
-                //Wehicle[] car = new Wehicle[5];
-                //Reorder wehicles
+                 //Reorder wehicles
                 car[1] = Ferrary;
                 car[3] = Tesla;
                 car[0] = Honda;
@@ -45,8 +43,9 @@ namespace Lesson_07
                 car[4] = Zapor;
 
                 insSorter<Wehicle> CarInSorter = new insSorter<Wehicle>();
-                sortedCars = CarInSorter.Sort(car);
-                CarInSorter.Print(sortedCars);
+                CarInSorter.inputArray = car;
+                sortedCars = CarInSorter.Sort();
+                CarInSorter.Print();
 
                 Console.ReadKey(false);
             }

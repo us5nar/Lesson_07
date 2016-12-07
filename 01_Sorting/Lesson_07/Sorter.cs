@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lesson_07
 {
@@ -8,11 +6,12 @@ namespace Lesson_07
     //Inherits Print and Sort methods from interfaces
     //implements swap
     {
-        public abstract T[] Sort(T[] arrayToSort); //Will be created in cilds
-        public void Print(T[] arrayToPrint)
+        public T[] inputArray;
+        public abstract T[] Sort(); //Will be created in cilds
+        public void Print()
         {
             Console.WriteLine("_____________SORTED_______________");
-            foreach (T element in arrayToPrint)
+            foreach (T element in inputArray)
             {
                 Console.WriteLine("{0,6}", element);
             }

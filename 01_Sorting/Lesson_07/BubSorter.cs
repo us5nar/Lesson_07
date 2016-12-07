@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lesson_07
 {
     class BubSorter<T>:Sorter<T>
     {
-        public override T[] Sort(T[] InputArray)
+        public override T[] Sort()
         {
-            if (!(InputArray[0] is IComparable))
+             if (!(inputArray[0] is IComparable))
             {
-                return InputArray;
+                return inputArray;
             }
             bool elementsSwapped = true;
             while (elementsSwapped)
@@ -20,18 +18,18 @@ namespace Lesson_07
                 int n = 0;
                 do
                 {
-                    IComparable currentValue = (IComparable)InputArray[n];
-                    IComparable nextVale = (IComparable)InputArray[n + 1];
+                    IComparable currentValue = (IComparable)inputArray[n];
+                    IComparable nextVale = (IComparable)inputArray[n + 1];
                     if (currentValue.CompareTo(nextVale) > 0)
                     {
-                        Swap(InputArray, n + 1, n);
+                        Swap(inputArray, n + 1, n);
                         elementsSwapped = true;
                     }
                     n++;
                 }
-                while (n < InputArray.Length - 1);
+                while (n < inputArray.Length - 1);
             }
-            return InputArray;
+            return inputArray;
         }
     }
 }

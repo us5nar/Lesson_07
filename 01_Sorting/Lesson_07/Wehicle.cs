@@ -27,19 +27,6 @@ namespace Lesson_07
             if (obj is Wehicle)
             {
                 Wehicle wechicleToCompare = (Wehicle)obj;
-                //if (this.speed < wechicleToCompare.speed)
-                //{
-                //    return -1;
-                //}
-                //else if (this.speed > wechicleToCompare.speed)
-                //{
-                //    return 1;
-                //}
-                //else
-                //{
-                //    return 0;
-                //}
-
                 return this.speed.CompareTo(wechicleToCompare.speed);
             }
             else
